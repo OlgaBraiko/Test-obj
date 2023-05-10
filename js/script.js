@@ -1,5 +1,5 @@
-const openPopup = document.querySelector(".open_pop");
-const closePopup = document.querySelector(".popup_close");
+const openPopup = document.querySelector(".popup_open");
+const closePopup = document.querySelector(".popup_close_btn");
 const popup = document.querySelector(".popup");
 
 openPopup.addEventListener("click", (e) => {
@@ -9,4 +9,10 @@ openPopup.addEventListener("click", (e) => {
 
 closePopup.addEventListener("click", () => {
   popup.classList.remove("pop_up_active");
+});
+
+window.addEventListener("keydown", (e) => {
+  if (e.target || keyCode.toLocaleLowerCase === "escape") {
+    popup.classList.remove("pop_up_active");
+  }
 });
