@@ -1,36 +1,38 @@
-.button {
-  margin-top: 40px;
+.popup_btn {
+  margin: 40px;
 }
 
-.pop_up {
+.popup {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 2;
 }
-.pop_up_container {
+
+.popup_wrap {
   display: flex;
   width: 100%;
   height: 100%;
 }
 
-.pop_up_body {
-  background-color: #fff;
+.popup_body {
+  background: #fff;
   height: 500px;
   width: 500px;
   margin: auto;
   text-align: center;
   padding-top: 100px;
 }
+
 .pop_up_active {
   display: block;
 }
 
-.open__block_btn {
+.close {
   height: 50px;
   width: 150px;
   background-color: rgb(55, 20, 209);

@@ -1,6 +1,6 @@
-const openPopup = document.querySelector(".open_pop_up");
-const closePopup = document.querySelector(".pop_up_close");
-const popup = document.querySelector(".pop_up");
+const openPopup = document.querySelector(".open_pop");
+const closePopup = document.querySelector(".popup_close");
+const popup = document.querySelector(".popup");
 
 openPopup.addEventListener("click", (e) => {
   e.preventDefault();
