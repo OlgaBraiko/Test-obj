@@ -1,0 +1,42 @@
+.popup__open_btn {
+  margin: 40px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.popup__wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.popup__body {
+  background: #fff;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.pop__up_active {
+  display: block;
+}
+
+.popup__close_btn {
+  height: 50px;
+  width: 150px;
+  background-color: rgb(55, 20, 209);
+  border: none;
+  color: #fff;
+  margin-top: 70px;
+}
