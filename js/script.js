@@ -9,9 +9,6 @@ accordions.forEach((accordion) => {
         .querySelectorAll(".content")
         .forEach((content) => (content.style.maxHeight = null));
     } else {
-      document
-        .querySelectorAll(".content")
-        .forEach((content) => (content.style.maxHeight = null));
       contents.style.maxHeight = contents.scrollHeight + "px";
     }
   });
