@@ -1,3 +1,4 @@
+ 
 const tabs = document.querySelectorAll(".tabs__item");
 const contents = document.querySelectorAll(".tabs__block");
 
@@ -30,9 +31,7 @@ const open = (target) => {
   });
 };
 
-document.addEventListener("keypress", (e) => {
-  const target = e.target;
-  if (e.key === "Enter") {
-    open(target);
+ 
   }
 });
+ 
