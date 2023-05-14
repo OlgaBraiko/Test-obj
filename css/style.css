@@ -1,43 +1,8 @@
- 
+.accordion {
+  border: 2px solid sandybrown;
+  padding: 10px;
+}
 .content {
-  padding: 50px 0;
-  max-width: 1000px;
-  margin: 0 auto;
+  max-height: 0;
+  overflow: hidden;
 }
-.tabs {
-  margin: 0 0 50px 0;
-}
-.tabs__items {
-  display: flex;
-}
-.tabs__item {
-  flex: 0 1 33.333%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  color: #c515b4;
-  text-decoration: none;
-}
-
-.tabs__block {
-  padding: 20px;
-  font-size: 18px;
-  line-height: 25px;
-  display: none;
-}
-.tabs__block:nth-child(1) {
-  background: plum;
-}
-.tabs__block:nth-child(2) {
-  background: lightgreen;
-}
-.tabs__block:nth-child(3) {
-  background: lightskyblue;
-}
-
-.tabs__active {
-  display: block;
-}
- 

@@ -1,37 +1,18 @@
- 
-const tabs = document.querySelectorAll(".tabs__item");
-const contents = document.querySelectorAll(".tabs__block");
+const accordions = document.querySelectorAll(".accordion");
+const contents = document.querySelectorAll(".content");
 
-const hideTabContent = () => {
-  contents.forEach((content) => {
-    content.style.display = "none";
-  });
-  tabs.forEach((tab) => {
-    tab.classList.remove("tabs__active");
-  });
-};
-
-const showTabContent = (i = 0) => {
-  contents[i].style.display = "block";
-  tabs[i].classList.add("tabs__active");
-};
-const handleClick = (index) => {
-  hideTabContent();
-  showTabContent(index);
-};
-
-tabs.forEach((tab, index) => (tab.onclick = () => handleClick(index)));
-
-const open = (target) => {
-  tabs.forEach((tab, i) => {
-    if (target == tab || target.parentNode == tab) {
-      hideTabContent();
-      showTabContent(i);
+accordions.forEach((accordion) => {
+  accordion.addEventListener("click", () => {
+    const contents = accordion.nextElementSibling;
+    if (contents.style.maxHeight) {
+      document
+        .querySelectorAll(".content")
+        .forEach((content) => (content.style.maxHeight = null));
+    } else {
+      document
+        .querySelectorAll(".content")
+        .forEach((content) => (content.style.maxHeight = null));
+      contents.style.maxHeight = contents.scrollHeight + "px";
     }
   });
-};
-
- 
-  }
 });
- 
