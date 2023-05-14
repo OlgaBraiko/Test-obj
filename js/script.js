@@ -1,25 +1,37 @@
-const openPopup = document.querySelector(".popup__open");
-const closePopup = document.querySelector(".popup__close_btn");
-const popup = document.querySelector(".popup");
+ 
+const tabs = document.querySelectorAll(".tabs__item");
+const contents = document.querySelectorAll(".tabs__block");
 
-const closeClick = (closeClickOverlay = true);
+const hideTabContent = () => {
+  contents.forEach((content) => {
+    content.style.display = "none";
+  });
+  tabs.forEach((tab) => {
+    tab.classList.remove("tabs__active");
+  });
+};
 
-openPopup.addEventListener("click", (e) => {
-  e.preventDefault();
+const showTabContent = (i = 0) => {
+  contents[i].style.display = "block";
+  tabs[i].classList.add("tabs__active");
+};
+const handleClick = (index) => {
+  hideTabContent();
+  showTabContent(index);
+};
 
-  popup.classList.add("pop__up_active");
-});
+tabs.forEach((tab, index) => (tab.onclick = () => handleClick(index)));
 
-closePopup.addEventListener("click", () => {
-  popup.classList.remove("pop__up_active");
-});
+const open = (target) => {
+  tabs.forEach((tab, i) => {
+    if (target == tab || target.parentNode == tab) {
+      hideTabContent();
+      showTabContent(i);
+    }
+  });
+};
 
-window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    popup.classList.remove("pop__up_active");
+ 
   }
 });
-
-popup.addEventListener("click", (e) => {
-  popup.classList.remove("pop__up_active");
-});
+ 
