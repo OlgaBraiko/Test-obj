@@ -5,4 +5,5 @@
 .content {
   max-height: 0;
   overflow: hidden;
+  transition: 0.3s ease-in-out;
 }
