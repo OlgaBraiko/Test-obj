@@ -1,9 +1,26 @@
-.accordion {
-  border: 2px solid sandybrown;
-  padding: 10px;
+form {
+  border: 1px solid red;
+  max-width: 500px;
 }
-.content {
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.3s ease-in-out;
+
+.container__name {
+  margin: 20px;
+}
+
+.container__pass {
+  margin: 20px;
+}
+
+.container__phone {
+  margin: 20px;
+}
+
+.button {
+  margin: 20px;
+  color: white;
+  background: blue;
+  border: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
 }
