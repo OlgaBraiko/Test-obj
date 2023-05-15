@@ -9,6 +9,7 @@ accordions.forEach((accordion) => {
       : contents.scrollHeight + "px";
   });
 });
-a = condition ? 1 : 0;
 
-condition ? (a = 1) : (a = 0);
+//a = condition ? 1 : 0;
+
+//condition ? (a = 1) : (a = 0);
