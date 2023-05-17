@@ -8,28 +8,39 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="accordion">Click2</div>
-    <div class="content">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores,
-      ab rem repellendus voluptas odio ipsa. Architecto aliquid aut, quam
-      perferendis amet eveniet. Sed voluptate veniam explicabo est? Corporis,
-      numquam.
-    </div>
-    <div class="accordion">Click2</div>
-    <div class="content">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores,
-      ab rem repellendus voluptas odio ipsa. Architecto aliquid aut, quam
-      perferendis amet eveniet. Sed voluptate veniam explicabo est? Corporis,
-      numquam.
-    </div>
-    <div class="accordion">Click3</div>
-    <div class="content">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores,
-      ab rem repellendus voluptas odio ipsa. Architecto aliquid aut, quam
-      perferendis amet eveniet. Sed voluptate veniam explicabo est? Corporis,
-      numquam.
-    </div>
-
+    <form action="#" method="get" enctype="multipart/form-data">
+      <div class="container__name">
+        <p>Имя</p>
+        <input
+          tabindex="1"
+          type="text"
+          name="username"
+          value=""
+          placeholder="Имя" />
+      </div>
+      <div class="container__pass">
+        <p>Пароль</p>
+        <input
+          tabindex="2"
+          type="password"
+          name="userpass"
+          value=""
+          placeholder="Пароль" />
+      </div>
+      <div class="container__phone">
+        <p>Телефон</p>
+        <input
+          tabindex="3"
+          type="tell"
+          name="userphone"
+          value=""
+          placeholder="Телефон" />
+      </div>
+      <div class="container__btns">
+        <button class="button" type="submit">Отправить</button>
+        <button class="button" type="reset">Отмена</button>
+      </div>
+    </form>
     <script src="./js/script.js"></script>
   </body>
 </html>
